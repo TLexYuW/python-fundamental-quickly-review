@@ -25,3 +25,8 @@ print(s1.lstrip())
 
 n = 'abcde'
 print(f'Hi {n}')
+
+print('H', 'e', 'l', 'l', 'o', '!', sep="💖", end="💀\n")
+print("World", end="😀")
+
+# print("Hi " + 25) // err
