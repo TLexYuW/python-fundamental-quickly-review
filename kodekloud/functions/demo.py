@@ -25,3 +25,27 @@ def print_info(name, age=18):
 
 
 print_info("john", 19)
+
+
+def my_function(x):
+    return 10 / x
+
+
+print(my_function(2))
+
+
+def get_odd_func(numbers):
+    odd_numbers = []
+    for num in numbers:
+        if num % 2:
+            odd_numbers.append(num)
+    return odd_numbers
+
+
+print(get_odd_func([7, 4, 5, 6, 9, 8, 12]))
+
+def double_list(numbers):
+  return 2 * numbers
+
+numbers = [1, 2, 3]
+print(double_list(numbers))
