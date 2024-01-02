@@ -39,7 +39,7 @@
 #       print("y is not defined")
 
 
-# try:
-#     x = 'seasalt'[7]
-# except IndexError:
-#     print("No character found in that index")
+try:
+    x = 'seasalt'[7]
+except IndexError:
+    print("No character found in that index")
