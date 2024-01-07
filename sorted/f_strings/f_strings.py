@@ -41,9 +41,9 @@ num = 10
 print(f"\n2.25 times {num} is {2.25 * num:.2f}")
 
 print("\n###########################################")
-for num in range(1,11):
+for num in range(1, 11):
     print(f"2.25 times {num} is {2.25 * num:.2f}")
 print("###########################################")
-for num in range(1,11):
+for num in range(1, 11):
     print(f"{num} divided by 4.52 is {num / 4.52:.2%}")
 print("###########################################\n")
