@@ -32,9 +32,13 @@ print(
 )
 
 # Handle
-# res_4 = rqs.get("https://httpbin.org/status/404")
-# print(res_4.status_code)
-# print(res_4.headers)
+res_4 = rqs.get("https://httpbin.org/status/404")
+print(res_4.status_code)
+print(res_4.headers)
+
+if res_4.status_code == rqs.codes.not_found:
+    print("raise error")
+    # res_4.raise_for_status()
 
 # if res_4.status_code == rqs.codes.not_found:
 #     print("Not Found")
@@ -84,8 +88,8 @@ print(
 
 # Proxy Server
 
-proxies = {"http": "46.4.96.137:80"}
-res_8 = rqs.get("https://httpbin.org/get", proxies=proxies)
-print(res_8.text)
+# proxies = {"http": "46.4.96.137:80"}
+# res_8 = rqs.get("https://httpbin.org/get", proxies=proxies)
+# print(res_8.text)
 # res_8_json = res_8.json()
 # print(res_8_json)

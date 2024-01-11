@@ -8,3 +8,6 @@
 ```bash
 py
 ```
+
+# Migration
+- Slowly Migrating to [python-java-jupyter-collections](https://github.com/TLexYuW/python-java-jupyter-collections)
