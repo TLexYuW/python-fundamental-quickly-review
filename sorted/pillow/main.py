@@ -1,5 +1,5 @@
 from PIL import Image
-
+import os
 
 def webp_to_gif(webp_file, gif_file):
     # Open the WebP file
@@ -53,8 +53,16 @@ def gif_to_webp(gif_file, webp_file):
 
 if __name__ == "__main__":
     # Example usage
-    webp_file = "./sorted/pillow/input2.webp"
-    gif_file = "./sorted/pillow/output.gif"
+    webp_file = "./sorted/pillow/output.webp"
+    gif_file = "./sorted/pillow/input.gif"
+    input_directory = "./sorted/pillow/"
+    output_directory = "./sorted/pillow/"
+    
+    for filename in os.listdir(input_directory):
+        if filename.endswith(".gif"):
+            input_file = os.path.join(input_directory, filename)
+            output_file = os.path.join(output_directory, os.path.splitext(filename)[0] + ".webp")
+            # webp_to_gif(webp_file, gif_file)
+            gif_to_webp(input_file, output_file)
 
-    # webp_to_gif(webp_file, gif_file)
-    gif_to_webp(gif_file, webp_file)
+
